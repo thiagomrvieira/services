@@ -16,3 +16,11 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+App::bind('LogExemplo', function($app){
+    return 'Log registrado';
+});
+
+$exemplo = App::make('LogExemplo');
+
+dd($exemplo);
