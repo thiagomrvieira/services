@@ -25,3 +25,26 @@ App::bind('LogExemplo', function($app){
 // dd($exemplo);
 
 Route::get('/teste', 'testeController@index');
+
+
+// Registrando um serviço à partir de uma instancia
+
+class Pessoa {
+
+}
+
+$pessoa = new Pessoa;
+
+// App::instance('Pessoa', new Pessoa());
+App::instance('Pessoa', $pessoa);
+
+
+dd(App::make('Pessoa'));
+
+
+
+
+
+
+
+
