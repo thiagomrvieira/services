@@ -38,12 +38,15 @@ $pessoa = new Pessoa;
 // App::instance('Pessoa', new Pessoa());
 App::instance('Pessoa', $pessoa);
 
-
-dd(App::make('Pessoa'));
-
+// dd(App::make('Pessoa'));
 
 
+// Retornando uma unica instancia de um serviço
+App::singleton('Conexao', function($app){
+    return 'Conectado!';
+});
 
+dd(App::make('Conexao'));
 
 
 
