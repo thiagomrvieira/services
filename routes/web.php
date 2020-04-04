@@ -21,6 +21,7 @@ App::bind('LogExemplo', function($app){
     return 'Log registrado';
 });
 
-$exemplo = App::make('LogExemplo');
+// $exemplo = App::make('LogExemplo');
+// dd($exemplo);
 
-dd($exemplo);
+Route::get('/teste', 'testeController@index');
