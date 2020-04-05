@@ -48,6 +48,6 @@ App::singleton('Conexao', function($app){
 
 // dd(App::make('Conexao'));
 
-
-
+// Rota para o controler que aponta para o service
+Route::get('/itens', 'testeController@itens');
 

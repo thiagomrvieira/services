@@ -5,8 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App;
 
+use App\Servicos\ItensService;
+
+
 class testeController extends Controller
 {
+
+    public function __construct(ItensService $service){
+        $this->service = $service;
+    }
     /**
      * Display a listing of the resource.
      *
@@ -82,5 +89,12 @@ class testeController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function itens()
+    {
+        $itens = $this->service->index();
+        return $itens;
+
     }
 }

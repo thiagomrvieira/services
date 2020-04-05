@@ -32,5 +32,7 @@ class NavigationServiceProvider extends ServiceProvider
             // $menu = Menu::all()
             return $view->with('menu', $menu);
         });
+
+        
     }
 }
