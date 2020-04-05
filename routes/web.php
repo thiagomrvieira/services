@@ -46,7 +46,7 @@ App::singleton('Conexao', function($app){
     return 'Conectado!';
 });
 
-dd(App::make('Conexao'));
+// dd(App::make('Conexao'));
 
 
 
