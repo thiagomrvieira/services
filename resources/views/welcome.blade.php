@@ -93,7 +93,12 @@
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a> -->
+                    
                     {{$menu}}
+                    
+                    <!-- @foreach($menu as $mn)
+                        <a href="{{$mn->slug}}">$mn->name</a>
+                    @endforeach -->
                 </div>
             </div>
         </div>
